@@ -8,13 +8,14 @@
     "server:http": "tsx src/http/server.ts",
     "client:http": "tsx src/http/client.ts",
     "stdio:build": "tsc src/stdio/server.ts --outDir src/stdio/dist --target es2023 --module nodenext",
-    "client:stdio": "tsx src/stdio/client.ts"
+    "client:stdio": "tsx src/stdio/client.ts",
+    "type-check": "tsc --build"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@ai-sdk/openai": "3.0.0-beta.54",
+    "@ai-sdk/openai": "3.0.0-beta.55",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "ai": "6.0.0-beta.94",
     "dotenv": "16.4.5",

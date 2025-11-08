@@ -23,6 +23,7 @@ async function main() {
 
     const { text: answer } = await generateText({
       model: openai('gpt-4o-mini'),
+      //@ts-ignore
       tools,
       stopWhen: stepCountIs(10),
       onStepFinish: async ({ toolResults }) => {

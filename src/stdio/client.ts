@@ -25,6 +25,7 @@ async function main() {
 
     const { text: answer } = await generateText({
       model: openai('gpt-4o-mini'),
+      // @ts-ignore
       tools: await mcpClient.tools({
         schemas: {
           'get-pokemon': {
